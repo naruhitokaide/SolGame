@@ -1,0 +1,25 @@
+use anchor_lang::error_code;
+
+#[error_code]
+pub enum RoundError {
+    #[msg("Round: Not allowed owner")]
+    NotAllowedOwner,
+
+    #[msg("Round: Invalid Round Index")]
+    InvalidRoundIndex,
+
+    #[msg("Round: Over max slot count")]
+    OverMaxSolt,
+
+    #[msg("Round: Already finished")]
+    AlreadyFinish,
+
+    #[msg("Round: Already claim")]
+    AlreadyClaim,
+
+    #[msg("Round: Current round is processing now")]
+    Processing,
+
+    #[msg("Round: The account is not initialized")]
+    UninitializedAccount
+}
