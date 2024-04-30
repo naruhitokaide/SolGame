@@ -4,14 +4,13 @@
 seeds = false
 skip-lint = false
 
-[programs.devnet]
-round = "HrA4A5JuHyt3ew9RY5b81vm3HugLYAY7GyqEP1UFwrVf"
+round = "BoB8rikXuQDYqDet9YSpqYmXcCBYiRxPSeLW7iXz8VdG"
 
 [registry]
 url = "https://api.apr.dev"
 
 [provider]
-cluster = "devnet"
+cluster = "Devnet"
 wallet = "/root/.config/solana/id.json"
 
 [scripts]

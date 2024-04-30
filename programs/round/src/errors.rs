@@ -9,7 +9,7 @@ pub enum RoundError {
     InvalidRoundIndex,
 
     #[msg("Round: Over max slot count")]
-    OverMaxSolt,
+    OverMaxSlot,
 
     #[msg("Round: Already finished")]
     AlreadyFinish,
@@ -21,5 +21,8 @@ pub enum RoundError {
     Processing,
 
     #[msg("Round: The account is not initialized")]
-    UninitializedAccount
+    UninitializedAccount,
+
+    #[msg("Round: Fee is over the max fee")]
+    MaxFeeError
 }
