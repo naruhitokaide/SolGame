@@ -9,7 +9,6 @@ use instructions::*;
 
 declare_id!("BoB8rikXuQDYqDet9YSpqYmXcCBYiRxPSeLW7iXz8VdG");
 
-
 #[program]
 pub mod round {
     use super::*;
