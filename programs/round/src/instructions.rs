@@ -320,26 +320,3 @@ pub struct WithDrawSOL<'info> {
 
     pub system_program: Program<'info, System>,
 }
-
-
-#[derive(Accounts)]
-pub struct WithDrawSOL<'info> {
-    #[account(mut)]
-    pub owner: Signer<'info>,
-
-    #[account(
-        mut,
-        seeds = [GLOBAL_STATE_SEED], 
-        bump,
-    )]
-    pub global_state: Account<'info, GlobalState>,
-
-    #[account(
-        mut,
-        address = global_state.vault
-    )]
-    /// CHECK: this should be set by admin
-    pub vault: AccountInfo<'info>,  // to receive SOL
-
-    pub system_program: Program<'info, System>,
-}
